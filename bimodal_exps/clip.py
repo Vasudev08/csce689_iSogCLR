@@ -409,7 +409,7 @@ def main(args):
     else:
         samplers = [None, None, None]
 
-    train_loader = create_train_loader(train_dataset, samplers[0], args.batch_size_train, 8, None)
+    train_loader = create_train_loader(train_dataset, samplers[0], args.batch_size_train, 2, None)
 
     # val_coco_loader, test_coco_loader = create_val_loader([val_coco_dataset, test_coco_dataset], samplers[1:], 
     #                                                       [args.batch_size_test]*2, [8]*2, [None]*2)
